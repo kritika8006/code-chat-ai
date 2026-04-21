@@ -2,8 +2,6 @@ const fs = require('fs-extra');
 const path = require('path');
 const { RecursiveCharacterTextSplitter } = require("@langchain/textsplitters");
 const ignore = require('ignore');
-
-// 1. Setup Ignore Rules (Essential for Cyber Security logic)
 const ig = ignore().add(['node_modules', '.git', 'dist', 'build', '.env', 'package-lock.json']);
 
 async function getFiles(dir) {
