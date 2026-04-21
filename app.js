@@ -1,5 +1,4 @@
 const { ChatOllama, OllamaEmbeddings } = require("@langchain/ollama");
-// FIXED IMPORT: Using the community subpath which is correctly exported
 const { MemoryVectorStore } = require("@langchain/community/vectorstores/memory");
 const { RecursiveCharacterTextSplitter } = require("@langchain/textsplitters");
 const { PromptTemplate } = require("@langchain/core/prompts");
